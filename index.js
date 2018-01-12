@@ -34,6 +34,7 @@ function splitRequest(request) {
 	}
 }
 
+// based on babel-loader
 function getExternalBabelOptions() {
 	const fileSystem = this.fs ? this.fs : fs;
 	const webpackRemainingChain = getRemainingRequest(this).split('!')
